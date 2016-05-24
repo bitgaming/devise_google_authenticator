@@ -2,7 +2,7 @@ module DeviseGoogleAuthenticator
   module Controllers # :nodoc:
     module Helpers # :nodoc:
       def google_authenticator_qrcode(user, qualifier=nil, issuer=nil)
-        issuer = user.class.ga_appname
+        issuer = controller.env['SERVER_NAME']
         issuer = "#{issuer} (#{Rails.env})" unless Rails.env.production?
         issuer = Rack::Utils.escape(issuer)
         data = "otpauth://totp/#{user.email}?secret=#{user.gauth_secret}&issuer=#{issuer}"
