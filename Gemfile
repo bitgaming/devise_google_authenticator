@@ -10,7 +10,7 @@ group :test do
   gem 'shoulda', '~> 2.11.3'
   gem 'mocha', '~> 0.13.0'
   gem 'factory_girl_rails', '~> 1.7'
-  gem 'nokogiri', '>= 1.7.1', :platforms => :ruby_18
+  gem 'nokogiri', '>= 1.8.3', :platforms => :ruby_18
   gem 'timecop'
   gem 'test-unit', '~> 3.0'
 end
