@@ -9,8 +9,8 @@ group :test do
   gem "capybara", "~> 1.1.0"
   gem 'shoulda', '~> 2.11.3'
   gem 'mocha', '~> 0.13.0'
-  gem 'factory_girl_rails', '~> 1.2'
-  gem 'nokogiri', '< 1.6.0', :platforms => :ruby_18
+  gem 'factory_girl_rails', '~> 1.7'
+  gem 'nokogiri', '>= 1.7.1', :platforms => :ruby_18
   gem 'timecop'
   gem 'test-unit', '~> 3.0'
 end
