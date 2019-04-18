@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
     # removed the following to try and get past this bundle update not finding compatible versions for gem issue
     # 'actionmailer' => '>= 3.0',
     'actionmailer' => '>= 4',
-    'devise' => '4.6.1',
+    'devise' => '>= 4.6.0',
     'rotp'   => '~> 1.6.1'
   }.each do |lib, version|
     s.add_runtime_dependency(lib, *version)
